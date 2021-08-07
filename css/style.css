@@ -40,13 +40,15 @@ section{
     margin-bottom: 3rem;
 }
 .btn{
+    margin-top: 40rem;
     display: inline-block;
-    margin-top: 1rem;
+    
     padding: .8rem 3rem;
     background: var(--green);
     color: #fff;
     font-size: 1.7rem;
     cursor: pointer;
+    
 }
 .btn:hover{
     background: #333;
@@ -58,7 +60,7 @@ section{
     align-content: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    background: var(--green);
+    background:#0368FF;
 }
 .header-1{
     border-bottom: .1rem solid rgba(153, 16, 16, 0.2);
@@ -71,18 +73,22 @@ section{
 }
 
 .header-1 span{
-    font-weight: lighter;
-    color: #fff;
+    font-weight: bolder;
+    color:white;
     font-size: 1.7rem;
 }
+
 .header-1 a{
+    
     padding: 0.7rem;
-    color: white;
-    font-size: 2rem;
+    color:white;
+    font-size: 1.7rem;
+    font-weight: bolder;
 }
 .header-1 a:hover{
-    color:yellow;
+    color:blue;
 }
+
 .header-2 .logo{
     font-weight: bolder;
     font-size: 3rem;
@@ -95,16 +101,23 @@ section{
     display: flex;
     align-items: center;
     width: 50rem;
+    height: 5rem;
     padding: 1.5rem;
     background: rgba(255, 255, 255, .2);
     border-radius: .5rem;
+    border: white solid 2px;
+    margin-top: 0rem;
+}
+::placeholder { /* chạy tốt trên Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white !important;
+    opacity: 1; /* Firefox */
 }
 
 .header-2 .search-bar-container #search-bar{
     width: 100%;
-    background: none;
+    background:none;
     text-transform: none;
-    color: #fff;
+    color:navy;
     font-size: 1.7rem;
 }
 .header-2 .search-bar-container #search-bar::placeholder{
@@ -180,14 +193,18 @@ section{
 }
 
 .home .home-slider .box .content span{
-    font-size: 3rem;
-    color: #333;
+    margin-top: 11rem;
+    font-size: 2.5rem;
+    color:white;
     padding:.5rem 0;
+    font-weight: bolder;
+    
 }
 .home .home-slider .box .content h3{
-    font-size: 6rem;
-    color: #333;
+    font-size: 4rem;
+    color: white;
     padding:.5rem 0;
+    
 
 }
 
@@ -299,14 +316,18 @@ section{
     .header-1{
         display: none;
     }
+    .deal .row .image .img{
+        padding-bottom: 100rem;
+    }
     .deal .row .content .count-down .box{
         width: 7rem;
         
         
     }
     .deal .row .content .count-down .box h3{
+        
         font-size: 3rem;
-        padding: .5rem 0;
+        padding-top: .5rem 0;
 
     }
     .deal .row .content .count-down .box span{
@@ -368,13 +389,14 @@ section{
 .category .box-container .box img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: cover
 
 }
 .category .box-container .box .content{
+    
     position: absolute;
     bottom: -5.5rem;
-    background: #fff;
+    /* background: #fff; */
     border-top: .1rem solid rgba(0, 0,0, .3);
     text-align: center;
     padding: .5rem 0;
@@ -383,12 +405,17 @@ section{
 .category .box-container .box:hover .content{
     bottom: 0;
 }
-.category .box-container .box .content h3{
-    color: #333;
+/* .category .box-container .box .content h3{
+    color: rgb(255, 0, 0);
     font-size: 2.5rem;
     padding: .5rem 0;
-
-}
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    padding-left: 50px;
+    
+} */
 .category .box-container .box .content btn{
     margin-bottom: 1.3rem;
 }
@@ -417,10 +444,11 @@ section{
 .product .box-container .box .discount{
     position: absolute;
     top: 1rem;left: 1rem;
-    background: rgba(0, 255,0, .1);
-    color: var(--green);
+    background: #ee4d2d;
+    color:#fff;
     font-size: 2rem;
     padding:.5rem 1rem;
+    font-weight: bolder;
 }
 .product .box-container .box .icons{
     position: absolute;
@@ -656,7 +684,7 @@ section{
     color: var(--green);
 
 }
-.footer .credit{
+.footer .Credit{
     font-size: 2rem;
     padding:2rem 1rem;
     margin-top: 2rem;
